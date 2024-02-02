@@ -20,7 +20,7 @@ function createSquare() {
 // gridContainer.appendChild(newSquare);
 // gridContainer.appendChild(otherSquare);
 
-function buildRow() {
+function buildRow(rowNumber = 1) {
     let columns = 10;
     const newRow = document.createElement('div');
     
@@ -29,12 +29,32 @@ function buildRow() {
 
     for (let i = 1; i <= columns; i++) {
         const square = createSquare();
-        square.id = `cX-r${i.toString()}`;
+        square.id = `c${rowNumber.toString()}-r${i.toString()}`;
         newRow.appendChild(square);
     }
 
     return newRow;
 }
 
-const newRow = buildRow();
-gridContainer.appendChild(newRow);
+// const newRow = buildRow();
+// gridContainer.appendChild(newRow);
+
+function buildGrid() {
+    let rows = 10;
+    const newGrid = document.createElement('div');
+
+    newGrid.classList.add('eas-grid');
+    newGrid.style.display = 'flex';
+    newGrid.style.flexDirection = 'column';
+
+    for (let i = 1; i <= rows; i++) {
+        const row = buildRow(i);
+
+        newGrid.appendChild(row);        
+    }
+
+    return newGrid;
+}
+
+const newGrid = buildGrid();
+gridContainer.appendChild(newGrid);
