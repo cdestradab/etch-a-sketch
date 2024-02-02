@@ -11,14 +11,18 @@ GENERAL OBJECTIVE: Build an "etch-a-sketch" game, whatever it is, following the 
         - Create some sections: HEADER, MAIN, FOOTER
         - Create a div with a class "eas-container" to contain the grid
         - In JS:
-            Declare a variable string "size", to determinate the dimension of the squared grid.
-            Declare a function "createSquare" to create an individual DIV
-                This DIVs will have the class "eas-square"
-            Declare a function "buildRow" to create a row made of squares using "createSquare", taking "size" as an input
-                Create a div element "rowContainer" to contain the elements of the row
-                Create n number of squares inside "rowContainer" using "createSquare"
-                    LATER: Use a loop to create every square, give it an ID called "cX-rY" where X is the number of the column, and Y is the number of the row"
-            Declare a function "buildGrid" to create a series of rows using "buildRow", taking "size" as an input
+            OK- Declare a variable string "size", to determinate the dimension of the squared grid.
+            OK- Declare a function "createSquare" to create an individual DIV
+            OK-     This DIVs will have the class "eas-square"
+            OK- Declare a function "buildRow" to create a row made of squares using "createSquare", taking "size" as an input
+            OK-     Create a div element "rowContainer" to contain the elements of the row
+            OK-     Create n number of squares inside "rowContainer" using "createSquare"
+            OK-         LATER: Use a loop to create every square, give it an ID called "cX-rY" where X is the number of the column, and Y is the number of the row"
+            OK- Declare a function "buildGrid" to create a series of rows using "buildRow", taking "size" as an input
+            
+            - Make the unitary elements of the grid to fill the dimensions of the grid container, all of them have the same dimensions.
+            - Make the createGrid() function create grids with a specific dimension from a given input.
+            - Write all the styles made with the JS scripts in the CSS file instead.
 
 2. Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
 
