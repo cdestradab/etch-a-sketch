@@ -14,8 +14,27 @@ function createSquare() {
     return newSquare;
 }
 
-const newSquare = createSquare();
-const otherSquare = createSquare();
+// const newSquare = createSquare();
+// const otherSquare = createSquare();
 
-gridContainer.appendChild(newSquare);
-gridContainer.appendChild(otherSquare);
+// gridContainer.appendChild(newSquare);
+// gridContainer.appendChild(otherSquare);
+
+function buildRow() {
+    let columns = 10;
+    const newRow = document.createElement('div');
+    
+    newRow.classList.add('eas-row');
+    newRow.style.display = 'flex';
+
+    for (let i = 1; i <= columns; i++) {
+        const square = createSquare();
+        square.id = `cX-r${i.toString()}`;
+        newRow.appendChild(square);
+    }
+
+    return newRow;
+}
+
+const newRow = buildRow();
+gridContainer.appendChild(newRow);
