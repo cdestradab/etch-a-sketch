@@ -1,6 +1,6 @@
-*{
+/* *{
     border: solid red 1px;
-}
+} */
 
 body {
     margin: 0;
@@ -15,10 +15,35 @@ body {
 
 main {
     min-height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* GRID STYLING */
+
 .eas-container {
-    display: flex;
-    align-self: center;
     width: 90%;
+}
+
+.eas-button {
+    margin-bottom: 30px;
+}
+
+.eas-grid {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: double black 5px;
+}
+
+.eas-row {
+    display: flex;
+    flex: 1;
+    min-width: 100%;
+}
+
+.eas-square {
+    aspect-ratio: 1/1   ;
+    flex: 1;
 }
