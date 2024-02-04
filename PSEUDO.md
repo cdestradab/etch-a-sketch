@@ -36,4 +36,4 @@ GENERAL OBJECTIVE: Build an "etch-a-sketch" game, whatever it is, following the 
 
 > EXTRAS:
 a. Rather than a color change from black to white, each interaction should randomize the square’s RGB value entirely.
-b. Additionally, implement a progressive darkening effect where each interaction adds 10% more black or color to the square. The objective is to achieve a completely black square only after ten interactions.
+
